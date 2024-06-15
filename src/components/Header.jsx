@@ -21,7 +21,7 @@ const Header = () => {
       <nav className="mt-5">
         <ul className="flex justify-around">
           <li className="text-[#868794]">
-            <NavLink to="/today">Today</NavLink>
+            <NavLink to="/">Today</NavLink>
           </li>
           <li className="text-[#868794]">
             <NavLink to="/forecast">Forecast</NavLink>

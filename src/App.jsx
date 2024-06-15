@@ -19,7 +19,7 @@ function App() {
         <div className="container mx-auto my-14 flex-col h-full bg-gradient-to-b from-[#484B5B] to-[#2C2D35] shadow-2xl pb-4">
           <Header />
           <Routes>
-            <Route path="/today" element={<TodayPage />} />
+            <Route path="/" element={<TodayPage />} />
             <Route path="/forecast" element={<ForecastPage />} />
             <Route path="/precipitation" element={<PrecipitationPage />} />
           </Routes>
