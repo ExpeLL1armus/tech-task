@@ -94,7 +94,7 @@ const TodayPage = () => {
         </div>
       </div>
       <div className="h-[117px] mt-7 overflow-x-auto overflow-y-hidden custom-scrollbar">
-        <ul className="flex flex-row gap-x-4 h-[100px] w-[360px] pl-3.5	">
+        <ul className="flex flex-row gap-x-3.5 h-[100px] w-[360px] pl-3.5	">
           {times.map((item) => (
             <li
               key={item.id}
