@@ -93,15 +93,15 @@ const TodayPage = () => {
           </div>
         </div>
       </div>
-      <div className="mt-7 overflow-x-auto">
-        <ul className="flex flex-row gap-x-3.5 h-[100px] w-[360px] pl-3.5	">
+      <div className="h-[117px] mt-7 overflow-x-auto overflow-y-hidden custom-scrollbar">
+        <ul className="flex flex-row gap-x-4 h-[100px] w-[360px] pl-3.5	">
           {times.map((item) => (
             <li
               key={item.id}
               onClick={() => onClickActiveTime(item.id)}
               className={
                 item.id === activeTime
-                  ? "active h-[100px] rounded-full min-w-[46px] bg-[#FFFFFF]/[.2] border border-white flex flex-col justify-evenly items-center cursor-pointer"
+                  ? "h-[100px] rounded-full min-w-[46px] bg-[#FFFFFF]/[.2] border border-white flex flex-col justify-evenly items-center cursor-pointer"
                   : "h-[100px] rounded-full min-w-[46px] bg-[#000000]/[.1] flex flex-col justify-evenly items-center cursor-pointer"
               }>
               <div className="text-[#9B9EAD] text-[8px]">{item.time}</div>
@@ -114,7 +114,7 @@ const TodayPage = () => {
         </ul>
       </div>
       <div className="flex flex-col items-center">
-        <div className="bg-gradient-to-t from-[#2F313A] to-[#232329] w-[340px] pb-7 mt-[27px] rounded-lg shadow-2xl relative flex flex-col items-center text-white">
+        <div className="bg-gradient-to-t from-[#2F313A] to-[#232329] w-[340px] mt-[4px] pb-7 rounded-lg shadow-2xl relative flex flex-col items-center text-white">
           <div className="absolute flex justify-between text-[#9B9EAD] text-[10px] top-[16px] right-[26px] w-[67px] h-[15px]">
             <p>High</p>
             <p>|</p>
